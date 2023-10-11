@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods vs String Methods</title>
+</head>
+<body>
+</body>
+<h2>Array Methods</h2>
+<script>
+    var myArray = [1, 2, 3, 4, 5];
+    // Array methods
+    document.write('<p>Original Array: ' + myArray + '</p>');
+    //push()
+    myArray.push(6);
+    document.write('<p>After push(6): ' + myArray + '</p>');
+    //pop()
+    myArray.pop();
+    document.write('<p>After pop(): ' + myArray + '</p>');
+    //join()
+    const arrayAsString = myArray.join(', ');
+    document.write('<p>Array as String: ' + arrayAsString + '</p>');
+</script>
+<h2>String Methods</h2>
+<script>
+    const myString = "Hello, World!";
+    // String methods
+    document.write('<p>Original String: ' + myString + '</p>');
+    //string length
+    const strLength = myString.length;
+    document.write('<p>String Length: ' + strLength + '</p>');
+    //charAt()
+    const firstChar = myString.charAt(0);
+    document.write('<p>First Character: ' + firstChar + '</p>');
+    //indexOf()
+    const indexOfWorld = myString.indexOf("World");
+    document.write('<p>Index of "World": ' + indexOfWorld + '</p>');
+</script>
+</html>
